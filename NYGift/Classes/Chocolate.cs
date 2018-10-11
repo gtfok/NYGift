@@ -10,7 +10,6 @@ namespace NYGift.Classes
     public class Chocolate : Sweet
     {
         public TypeOfChocolate TypeOfChocolate;
-
         public Chocolate(string name, double weight, double sugar, double calories,    TypeOfChocolate typeOfChocolate) : base(name, weight, sugar, calories)
         {
             TypeOfChocolate = typeOfChocolate;
