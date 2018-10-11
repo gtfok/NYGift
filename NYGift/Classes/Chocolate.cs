@@ -15,8 +15,7 @@ namespace NYGift.Classes
         {
             TypeOfChocolate = typeOfChocolate;
         }
-
-        public override string TypeOfSweetness => "Chocolate";
+                public override string TypeOfSweetness => "Chocolate";
         public override string ItemInfo => string.Format(" {0},  weight: {1}, sugar: {2}, calories: {3}" +
                     ", type of chocolste  {4} ", Name, Weight,  SugarPerUnit, CaloriPerUnit, TypeOfChocolate);
     }
