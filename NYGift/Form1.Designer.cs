@@ -83,7 +83,7 @@
             this.buttonfind.TabIndex = 2;
             this.buttonfind.Text = "Find";
             this.buttonfind.UseVisualStyleBackColor = true;
-            this.buttonfind.Click += new System.EventHandler(this.button3_Click);
+            this.buttonfind.Click += new System.EventHandler(this.buttonfind_Click);
             // 
             // buttoninfo
             // 
@@ -116,7 +116,7 @@
             this.radioCandy.TabStop = true;
             this.radioCandy.Text = "Candy";
             this.radioCandy.UseVisualStyleBackColor = false;
-            this.radioCandy.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+         
             // 
             // radioChocolate
             // 
@@ -128,7 +128,7 @@
             this.radioChocolate.TabStop = true;
             this.radioChocolate.Text = "Chocolate";
             this.radioChocolate.UseVisualStyleBackColor = true;
-            this.radioChocolate.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+           
             // 
             // labelMenu
             // 
@@ -151,7 +151,7 @@
             this.labelMinSugar.Size = new System.Drawing.Size(86, 18);
             this.labelMinSugar.TabIndex = 8;
             this.labelMinSugar.Text = "Min Sugar";
-            this.labelMinSugar.Click += new System.EventHandler(this.label2_Click);
+         
             // 
             // labelMaxSugar
             // 
@@ -163,7 +163,7 @@
             this.labelMaxSugar.Size = new System.Drawing.Size(88, 18);
             this.labelMaxSugar.TabIndex = 9;
             this.labelMaxSugar.Text = "Max sugar";
-            this.labelMaxSugar.Click += new System.EventHandler(this.label1_Click);
+        
             // 
             // labelAdd
             // 
@@ -173,7 +173,7 @@
             this.labelAdd.Size = new System.Drawing.Size(108, 16);
             this.labelAdd.TabIndex = 10;
             this.labelAdd.Text = "Add Sweetness";
-            this.labelAdd.Click += new System.EventHandler(this.label1_Click_1);
+           
             // 
             // labelTypeOfChocolate
             // 
@@ -210,7 +210,7 @@
             this.labelCalories.Size = new System.Drawing.Size(68, 16);
             this.labelCalories.TabIndex = 15;
             this.labelCalories.Text = "Calories";
-            this.labelCalories.Click += new System.EventHandler(this.label4_Click);
+            
             // 
             // labelWeight
             // 
@@ -229,6 +229,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(474, 212);
             this.listBox1.TabIndex = 17;
+          
             // 
             // comboBox1
             // 

@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace NYGift.Classes
 {
-    public class Gift : IGift
+    public class Gift : INYGift
     {
         private ICollection<ISweetness> sweetnessitems;
         public IEnumerable<ISweetness> Items
@@ -45,6 +45,9 @@ namespace NYGift.Classes
                 }
             }
         }
+
+        public string NameOfGift => throw new NotImplementedException();
+
         public IEnumerable<ISweetness> SortSweetnessByWeight()
         {
             //сделать универсальным (можно добавить вспомогательный класс)
@@ -56,6 +59,16 @@ namespace NYGift.Classes
 
             return sweetnessitems.Where(x => (x.SugarPerUnit >= min) && (x.SugarPerUnit <= max)).ToList();
 
+        }
+
+        public IEnumerable<ISweetness> FindSweetnessBySugar(double min, double max)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DelSweet(Sweet sweets)
+        {
+            throw new NotImplementedException();
         }
     }
 }

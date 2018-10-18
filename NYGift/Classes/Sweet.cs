@@ -12,16 +12,18 @@ namespace NYGift.Classes
         public double SugarPerUnit { get; }
         public double Weight { get; }
         public string Name { get; }
-        public double CaloriPerUnit { get; }
+       
         public abstract string TypeOfSweetness { get; }
         public abstract string ItemInfo { get; }
+
+        public double Calories { get; }
 
         public Sweet(string name, double weight, double sugar, double calories)
         {
             Name = name;
             Weight = weight;
             SugarPerUnit = sugar;
-            CaloriPerUnit = calories;
+            Calories = calories;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using NYGift.Enums;
+﻿using NYGift.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +16,6 @@ namespace NYGift.Classes
         }
                 public override string TypeOfSweetness => "Chocolate";
         public override string ItemInfo => string.Format(" {0},  weight: {1}, sugar: {2}, calories: {3}" +
-                    ", type of chocolste  {4} ", Name, Weight,  SugarPerUnit, CaloriPerUnit, TypeOfChocolate);
+                    ", type of chocolste  {4} ", Name, Weight,  SugarPerUnit, Calories, TypeOfChocolate);
     }
 }
