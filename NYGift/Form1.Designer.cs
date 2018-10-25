@@ -109,26 +109,27 @@
             // 
             this.radioCandy.AutoSize = true;
             this.radioCandy.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.radioCandy.Font = new System.Drawing.Font("Jokerman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioCandy.Location = new System.Drawing.Point(141, 273);
             this.radioCandy.Name = "radioCandy";
-            this.radioCandy.Size = new System.Drawing.Size(67, 20);
+            this.radioCandy.Size = new System.Drawing.Size(68, 24);
             this.radioCandy.TabIndex = 5;
             this.radioCandy.TabStop = true;
             this.radioCandy.Text = "Candy";
             this.radioCandy.UseVisualStyleBackColor = false;
-         
+            this.radioCandy.CheckedChanged += new System.EventHandler(this.radioCandy_CheckedChanged);
             // 
             // radioChocolate
             // 
             this.radioChocolate.AutoSize = true;
+            this.radioChocolate.Font = new System.Drawing.Font("Jokerman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioChocolate.Location = new System.Drawing.Point(12, 273);
             this.radioChocolate.Name = "radioChocolate";
-            this.radioChocolate.Size = new System.Drawing.Size(99, 20);
+            this.radioChocolate.Size = new System.Drawing.Size(93, 24);
             this.radioChocolate.TabIndex = 6;
             this.radioChocolate.TabStop = true;
             this.radioChocolate.Text = "Chocolate";
             this.radioChocolate.UseVisualStyleBackColor = true;
-           
             // 
             // labelMenu
             // 
@@ -151,7 +152,6 @@
             this.labelMinSugar.Size = new System.Drawing.Size(86, 18);
             this.labelMinSugar.TabIndex = 8;
             this.labelMinSugar.Text = "Min Sugar";
-         
             // 
             // labelMaxSugar
             // 
@@ -163,7 +163,6 @@
             this.labelMaxSugar.Size = new System.Drawing.Size(88, 18);
             this.labelMaxSugar.TabIndex = 9;
             this.labelMaxSugar.Text = "Max sugar";
-        
             // 
             // labelAdd
             // 
@@ -173,7 +172,6 @@
             this.labelAdd.Size = new System.Drawing.Size(108, 16);
             this.labelAdd.TabIndex = 10;
             this.labelAdd.Text = "Add Sweetness";
-           
             // 
             // labelTypeOfChocolate
             // 
@@ -210,7 +208,6 @@
             this.labelCalories.Size = new System.Drawing.Size(68, 16);
             this.labelCalories.TabIndex = 15;
             this.labelCalories.Text = "Calories";
-            
             // 
             // labelWeight
             // 
@@ -229,7 +226,6 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(474, 212);
             this.listBox1.TabIndex = 17;
-          
             // 
             // comboBox1
             // 

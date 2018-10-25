@@ -34,7 +34,7 @@ namespace NYGift
             int j = 0;
             foreach ( var i in temp)
             {
-                listBox1.Items.Insert(j, String.Format("Name:{0}," + "SugarPerUnit: {1}", i.Name, i.SugarPerUnit));
+                listBox1.Items.Insert(j, String.Format("Name:{0}," + "SugarPerUnit: {1}", i.Name, i.Weight));
             }
         }
 
@@ -85,9 +85,11 @@ namespace NYGift
             foreach (var i in _gift.FindSweetnessBySugar(min,max))
             {
 
-                listBox1.Items.Insert(j, String.Format("{0},{1}", i.TypeOfSweetness, i.ItemInfo));
+                listBox1.Items.Insert(j, String.Format("{0},{1}", i.Name, i.SugarPerUnit));
                 j++;
             }
+            
+           
         }
 
         private void buttonadd_Click(object sender, EventArgs e)
@@ -95,6 +97,9 @@ namespace NYGift
 
         }
 
-       
+        private void radioCandy_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
